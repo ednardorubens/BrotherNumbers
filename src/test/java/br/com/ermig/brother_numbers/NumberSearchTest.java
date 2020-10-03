@@ -1,4 +1,4 @@
-package br.com.navita.brother_numbers;
+package br.com.ermig.brother_numbers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

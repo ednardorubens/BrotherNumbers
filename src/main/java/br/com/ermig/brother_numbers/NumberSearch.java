@@ -1,4 +1,4 @@
-package br.com.navita.brother_numbers;
+package br.com.ermig.brother_numbers;
 
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -20,7 +20,9 @@ public class NumberSearch {
 		if (str.isEmpty()) {
 			return Stream.of("");
 		}
-		return IntStream.range(0, str.length()).boxed().flatMap(i -> permutations(str.substring(0, i) + str.substring(i + 1)).map(t -> str.charAt(i) + t));
+		return IntStream.range(0, str.length()).boxed()
+				.flatMap(i -> permutations(str.substring(0, i) + str.substring(i + 1))
+						.map(t -> str.charAt(i) + t));
 	}
 
 }
